@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIM-rN-k8a">
+                                <rect key="frame" x="127" y="748" width="120" height="30"/>
+                                <state key="normal" title="Change language">
+                                    <color key="titleColor" red="0.0" green="0.19680748456790123" blue="0.3544801311728395" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnChangeLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B1R-4L-ANb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are pretty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo2-gt-Ycp">
+                                <rect key="frame" x="61" y="210" width="253" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(english)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOc-sZ-GRg">
+                                <rect key="frame" x="148" y="275" width="78" height="27"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhQ-IC-MKQ">
+                                <rect key="frame" x="0.0" y="596" width="375" height="216"/>
+                                <color key="backgroundColor" red="0.043137256056070328" green="0.29019609093666077" blue="0.45098039507865906" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-0S-vVm">
+                                <rect key="frame" x="0.0" y="551" width="375" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-Bh-OB6">
+                                        <rect key="frame" x="313" y="8" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0" green="0.19680748456790123" blue="0.3544801311728395" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPickLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbf-Dk-oam"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="d4P-Bh-OB6" firstAttribute="top" secondItem="ZBm-0S-vVm" secondAttribute="topMargin" id="2zV-tI-zbQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="d4P-Bh-OB6" secondAttribute="trailing" constant="16" id="GlP-px-Yif"/>
+                                    <constraint firstItem="d4P-Bh-OB6" firstAttribute="centerY" secondItem="ZBm-0S-vVm" secondAttribute="centerY" id="wAf-RI-PJF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.32198832947530864" blue="0.33428578317901236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZBm-0S-vVm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AF0-gA-0tX"/>
+                            <constraint firstItem="bhQ-IC-MKQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AZx-ov-j3x"/>
+                            <constraint firstItem="Yo2-gt-Ycp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="166" id="C4Q-Fs-JYt"/>
+                            <constraint firstItem="mOc-sZ-GRg" firstAttribute="top" secondItem="Yo2-gt-Ycp" secondAttribute="bottom" constant="10" id="QWL-ZZ-tmG"/>
+                            <constraint firstItem="Yo2-gt-Ycp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SIG-6H-DMZ"/>
+                            <constraint firstItem="bhQ-IC-MKQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Yuz-s2-IoD"/>
+                            <constraint firstAttribute="bottom" secondItem="bhQ-IC-MKQ" secondAttribute="bottom" id="b6m-cG-EQk"/>
+                            <constraint firstItem="bhQ-IC-MKQ" firstAttribute="top" secondItem="ZBm-0S-vVm" secondAttribute="bottom" id="fzA-XA-FC4"/>
+                            <constraint firstItem="ZBm-0S-vVm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hO5-qN-kdA"/>
+                            <constraint firstItem="mOc-sZ-GRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mHL-I0-Ujb"/>
+                            <constraint firstItem="AIM-rN-k8a" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="o2h-3V-ZbR"/>
+                            <constraint firstItem="AIM-rN-k8a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wvj-V6-Gcp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnChangeLanguageContainer" destination="ZBm-0S-vVm" id="mE8-zj-itN"/>
+                        <outlet property="lblHomeTitle" destination="Yo2-gt-Ycp" id="yAh-BY-tNO"/>
+                        <outlet property="lblLanguage" destination="mOc-sZ-GRg" id="nbM-1c-3I9"/>
+                        <outlet property="pickerView" destination="bhQ-IC-MKQ" id="G1z-kX-TQw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
