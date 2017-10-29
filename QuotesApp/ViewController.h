@@ -7,21 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UILabel *lblHomeTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblLanguage;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
-@property (weak, nonatomic) IBOutlet UIView *btnChangeLanguageContainer;
 
-@property (nonatomic) NSDictionary *languagesData;
-@property (nonatomic) NSArray *languageNameList;
+@property (nonatomic) NSArray *languagesData;
+@property (nonatomic) NSDictionary *selectedLanguage;
 
 - (IBAction)btnChangeLanguage:(id)sender;
-- (IBAction)btnPickLanguage:(id)sender;
-
-- (NSArray *)getListOfLangueagesName;
+- (IBAction)btnPlaySound:(id)sender;
 
 - (NSDictionary *)getLanguage:(NSString *)languageCode;
 - (void)changeYouArePrettyText:(NSString *)selectedLanguage;
