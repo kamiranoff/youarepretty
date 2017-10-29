@@ -10,6 +10,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="AvenirNext.ttc">
+            <string>AvenirNext-Italic</string>
             <string>AvenirNext-Regular</string>
         </array>
     </customFonts>
@@ -23,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIM-rN-k8a">
-                                <rect key="frame" x="127" y="748" width="120" height="30"/>
+                                <rect key="frame" x="127" y="764" width="120" height="30"/>
                                 <state key="normal" title="Change language">
                                     <color key="titleColor" red="0.92549019610000005" green="0.59607843140000005" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -32,13 +33,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are pretty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo2-gt-Ycp">
-                                <rect key="frame" x="16" y="210" width="343" height="55"/>
+                                <rect key="frame" x="16" y="134" width="343" height="55"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
                                 <color key="textColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(english)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOc-sZ-GRg">
-                                <rect key="frame" x="16" y="275" width="343" height="27"/>
+                                <rect key="frame" x="16" y="250" width="343" height="27"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,9 +49,14 @@
                                 <color key="backgroundColor" red="0.90737324949999998" green="0.47690868380000001" blue="0.47546154260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g28-4m-sbD">
-                                <rect key="frame" x="150" y="326" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romanization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meN-iu-Dlh">
+                                <rect key="frame" x="16" y="197" width="343" height="28"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.83784848539418799" green="0.86541569960212206" blue="0.85671706883686216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g28-4m-sbD">
+                                <rect key="frame" x="150" y="391" width="75" height="30"/>
                                 <state key="normal" title="Play sound">
                                     <color key="titleColor" red="0.90737324949999998" green="0.47690868380000001" blue="0.47546154260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -61,14 +67,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.87968754768371582" green="0.01234275009483099" blue="0.18605992197990417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Yo2-gt-Ycp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="1Y8-O6-Rwt"/>
                             <constraint firstAttribute="bottom" secondItem="bhQ-IC-MKQ" secondAttribute="bottom" id="A1W-BO-fPM"/>
                             <constraint firstItem="Yo2-gt-Ycp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="E8D-Wv-jl7"/>
-                            <constraint firstItem="AIM-rN-k8a" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NPf-9V-9ep"/>
+                            <constraint firstItem="AIM-rN-k8a" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="16" id="G82-nb-4Fz"/>
+                            <constraint firstItem="meN-iu-Dlh" firstAttribute="top" secondItem="Yo2-gt-Ycp" secondAttribute="bottom" constant="8" id="JTq-c7-fZ5"/>
+                            <constraint firstItem="g28-4m-sbD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KDj-aw-fhx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="meN-iu-Dlh" secondAttribute="trailing" constant="16" id="KjQ-Hw-lXF"/>
+                            <constraint firstItem="meN-iu-Dlh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OhT-It-zSq"/>
                             <constraint firstItem="mOc-sZ-GRg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PKI-rj-rKT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mOc-sZ-GRg" secondAttribute="trailing" constant="16" id="PNm-kh-Rm5"/>
                             <constraint firstItem="bhQ-IC-MKQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RSO-pe-zAE"/>
-                            <constraint firstItem="Yo2-gt-Ycp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="166" id="hhO-1f-9rD"/>
-                            <constraint firstItem="mOc-sZ-GRg" firstAttribute="top" secondItem="Yo2-gt-Ycp" secondAttribute="bottom" constant="10" id="khS-Uz-V7T"/>
+                            <constraint firstItem="g28-4m-sbD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a4S-qL-xi1"/>
+                            <constraint firstItem="mOc-sZ-GRg" firstAttribute="top" secondItem="meN-iu-Dlh" secondAttribute="bottom" constant="25" id="dRB-si-S6b"/>
                             <constraint firstItem="bhQ-IC-MKQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qch-AR-SIn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yo2-gt-Ycp" secondAttribute="trailing" constant="16" id="qpv-kN-0RM"/>
                             <constraint firstItem="AIM-rN-k8a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="smV-t0-OSX"/>
@@ -78,6 +89,7 @@
                     <connections>
                         <outlet property="lblHomeTitle" destination="Yo2-gt-Ycp" id="yAh-BY-tNO"/>
                         <outlet property="lblLanguage" destination="mOc-sZ-GRg" id="nbM-1c-3I9"/>
+                        <outlet property="lblRomanization" destination="meN-iu-Dlh" id="Hc7-fI-PQ4"/>
                         <outlet property="pickerView" destination="bhQ-IC-MKQ" id="G1z-kX-TQw"/>
                     </connections>
                 </viewController>

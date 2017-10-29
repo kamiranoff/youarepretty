@@ -15,9 +15,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblHomeTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblLanguage;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (weak, nonatomic) IBOutlet UILabel *lblRomanization;
 
-@property (nonatomic) NSArray *languagesData;
-@property (nonatomic) NSDictionary *selectedLanguage;
+
 
 - (IBAction)btnChangeLanguage:(id)sender;
 - (IBAction)btnPlaySound:(id)sender;

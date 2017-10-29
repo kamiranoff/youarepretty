@@ -1,32 +1,169 @@
- [
-  {
-  "code": "en_US",
-  "name": "American English",
-  "pretty": ["you are pretty", "you are beautiful"]
+ [ {
+  "code": "eu",
+  "name": "Basque",
+  "pretty": ["Polita zara"],
+  "romanization":[],
+  "rtl":false
+  },
+   {
+  "code": "ca",
+  "name": "Catalan",
+  "pretty": ["ets maca"],
+  "romanization":[],
+  "rtl":false
   },
   {
-  "code": "en_GB",
+  "code": "zh",
+  "name": "Chinese",
+  "pretty": ["你很漂亮。"],
+  "romanization": ["Nǐ hěn piàoliɑnɡ."],
+  "rtl": false,
+  },
+  {
+  "code": "dv",
+  "name": "Divehi",
+  "pretty": [""],
+  "romanization":["Varah Reethi"],
+  "rtl":false
+  },
+  {
+  "code": "en-US",
+  "name": "American English",
+  "pretty": ["you are pretty", "you are beautiful"],
+  "romanization": [],
+  "rtl": false,
+  },
+  {
+  "code": "en-GB",
   "name": "British English",
-  "pretty": []
+  "pretty": ["you are pretty", "you are beautiful"],
+  "romanization": [],
+  "rtl": false,
   },
   {
   "code": "en",
   "name": "English",
-  "pretty": ["You are pretty"]
+  "pretty": ["You are pretty"],
+  "romanization": [],
+  "rtl": false,
+  },
+  {
+  "code": "en-CA",
+  "name": "Canadian English",
+  "pretty": ["You are pretty"],
+  "romanization": [],
+  "rtl": false,
+  }, {
+  "code": "fr-CA",
+  "name": "Canadian French",
+  "pretty": ["tu es jolie"],
+  "romanization": [],
+  "rtl": false,
   },
   {
   "code": "fr",
   "name": "French",
-  "pretty": ["tu es jolie"]
+  "pretty": ["tu es jolie"],
+  "romanization": [],
+  "rtl": false,
   },
   {
-  "code": "es",
-  "name": "Spanish",
-  "pretty": ["eres guapa"]
+  "code": "fr-FR",
+  "name": "French",
+  "pretty": ["tu es jolie"],
+  "romanization": [],
+  "rtl": false,
+  },
+  {
+  "code": "fi",
+  "name": "Finnish",
+  "pretty": ["Sinä olet kaunis"],
+  "romanization":[],
+  "rtl": false,
+  },
+  {
+  "code": "de",
+  "name": "German",
+  "pretty": ["du bist schön"],
+  "romanization":[],
+  "rtl":false
+  },
+   {
+  "code": "hu",
+  "name": "Hungarian",
+  "pretty": ["szép vagy"],
+  "romanization":[],
+  "rtl": false,
+  },
+  {
+  "code": "ga",
+  "name": "Irish",
+  "pretty": ["Tá tú go hálainn"],
+  "romanization":[],
+  "rtl": false,
   },
   {
   "code": "it",
   "name": "Italian",
-  "pretty": ["sei bella"]
+  "pretty": ["sei bella"],
+  "romanization": [],
+  "rtl": false,
+  },
+   {
+  "code": "fa",
+  "name": "Persian",
+  "pretty": ["تو خیلی خوشگلی"],
+  "romanization":["kheili khosh geli"],
+  "rtl":true
+  },
+  {
+  "code": "pl",
+  "name": "Polish",
+  "pretty": ["Jesteś piękna"],
+  "romanization":[],
+  "rtl": false,
+  },
+  {
+  "code": "ru",
+  "name": "Russian",
+  "pretty": ["Tы красивая"],
+  "romanization":["ty krasivaya"],
+  "rtl":false
+  },
+  {
+  "code": "es",
+  "name": "Spanish",
+  "pretty": ["eres guapa"],
+  "romanization": [],
+  "rtl": false,
+  },
+  {
+  "code": "es-ES",
+  "name": "European Spanish",
+  "pretty": ["eres guapa"],
+  "romanization": [],
+  "rtl": false,
+  },
+  {
+  "code": "es-MX",
+  "name": "Mexican Spanish",
+  "pretty": ["eres guapa"],
+  "romanization": [],
+  "rtl": false,
+  },
+   {
+  "code": "sv",
+  "name": "Swedish",
+  "pretty": ["Du är vacker"],
+  "romanization":[],
+  "rtl":false
+  },
+  {
+  "code": "ur",
+  "name": "Urdu",
+  "pretty": [],
+  "romanization":["tum baat suni hai"],
+  "rtl":false
   }
-]
+  ]
+

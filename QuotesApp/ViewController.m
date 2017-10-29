@@ -10,9 +10,14 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) NSArray *languagesData;
+@property (strong, nonatomic) NSDictionary *selectedLanguage;
+
 @end
 
 @implementation ViewController
+
+
 
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -24,7 +29,7 @@
   self.pickerView.delegate = self;
   self.pickerView.dataSource = self;
 //
-  NSString * selectedLanguageCode = @"en";
+  NSString * selectedLanguageCode = [self.languagesData objectAtIndex:0][@"code"];
   self.selectedLanguage = [self getLanguage:selectedLanguageCode];
   
   [self changeYouArePrettyText:selectedLanguageCode];
@@ -41,12 +46,30 @@
 - (void)changeYouArePrettyText:(NSString *)selectedLanguage {
   NSDictionary *language = [self getLanguage:selectedLanguage];
   NSArray *youArePrettyVariations = language[@"pretty"];
+  NSArray *romanizationVariations = language[@"romanization"];
   NSString *youArePretty = @"We don't know yet...";
+  NSString *romanization = nil;
+ // BOOL isRightToLeft = language[@"rtl"];
+  
+  
   NSString *languageName = [NSString stringWithFormat:@"%@%@%@", @"(", language[@"name"], @")" ];
 
   if(youArePrettyVariations.count > 0) {
-    youArePretty = language[@"pretty"][0];
+    youArePretty = youArePrettyVariations[0];
   }
+  
+  if(romanizationVariations.count > 0) {
+    romanization = romanizationVariations[0];
+    self.lblRomanization.text = romanization;
+  }else {
+    self.lblRomanization.text = nil;
+  }
+  
+//  if(isRightToLeft) {
+//     self.lblHomeTitle.textAlignment = NSTextAlignmentRight; // right to left
+//  }else {
+//    self.lblHomeTitle.textAlignment = NSTextAlignmentLeft; // Left to right
+//  }
 
   [UIView transitionWithView:self.lblHomeTitle
                     duration:0.3f
@@ -56,6 +79,7 @@
                     self.lblHomeTitle.text = youArePretty;
 
                   } completion:nil];
+  
   
   self.lblLanguage.text = languageName;
 }
@@ -70,9 +94,6 @@
   return languages[objectIndex];
 }
 
-- (NSDictionary *)setSelectedLanguage:(NSDictionary *)selectedLanguage {
-  return selectedLanguage;
-}
 
 - (NSArray *)JSONFromLanguagesFile
 {
@@ -120,7 +141,6 @@
 
 - (IBAction)btnChangeLanguage:(id)sender {
   self.pickerView.hidden = NO;
-
 }
 
 - (IBAction)btnPlaySound:(id)sender {
