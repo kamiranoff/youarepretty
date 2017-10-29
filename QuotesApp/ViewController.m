@@ -7,11 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "JSONHelpers.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) NSArray *languagesData;
 @property (strong, nonatomic) NSDictionary *selectedLanguage;
+@property (strong, nonatomic) AVSpeechSynthesizer *synthesizer;
 
 @end
 
@@ -23,12 +25,17 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
   
-  self.languagesData = [self JSONFromLanguagesFile];
+  self.languagesData = [JSONHelpers JSONFromLanguagesFile];
 //  self.languageNameList = [self getListOfLangueagesName];
 //
+  
+
   self.pickerView.delegate = self;
   self.pickerView.dataSource = self;
-//
+
+  self.synthesizer = [[AVSpeechSynthesizer alloc]init];
+
+  
   NSString * selectedLanguageCode = [self.languagesData objectAtIndex:0][@"code"];
   self.selectedLanguage = [self getLanguage:selectedLanguageCode];
   
@@ -139,6 +146,13 @@
   self.pickerView.hidden = YES;
 }
 
+- (void)playSound:(NSString *)words languageCode:(NSString *)code {
+  AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc]initWithString:words];
+  AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:code];
+  utterance.voice = voice;
+  [self.synthesizer speakUtterance:utterance];
+}
+
 - (IBAction)btnChangeLanguage:(id)sender {
   self.pickerView.hidden = NO;
 }
@@ -146,18 +160,17 @@
 - (IBAction)btnPlaySound:(id)sender {
   
    NSDictionary * language = self.selectedLanguage;
+  NSArray * youArePrettyArray = language[@"pretty"];
    NSString * languageCode = language[@"code"];
-   NSString * youArePretty = language[@"pretty"][0];
- 
-  AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
+  NSString * youArePretty = nil;
   
-  AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc]initWithString:youArePretty];
+  if(youArePrettyArray.count > 0) {
+    youArePretty = language[@"pretty"][0];
+  } else {
+    return;
+  }
   
-  AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:languageCode];
-  
-  utterance.voice = voice;
-  
-  [synthesizer speakUtterance:utterance];
+  [self playSound:youArePretty languageCode:languageCode];
 }
 
 
