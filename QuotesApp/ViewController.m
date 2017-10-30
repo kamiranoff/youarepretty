@@ -20,16 +20,13 @@
 @implementation ViewController
 
 
-
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
   
   self.languagesData = [JSONHelpers JSONFromLanguagesFile];
 //  self.languageNameList = [self getListOfLangueagesName];
-//
   
-
   self.pickerView.delegate = self;
   self.pickerView.dataSource = self;
 
@@ -101,13 +98,6 @@
   return languages[objectIndex];
 }
 
-
-- (NSArray *)JSONFromLanguagesFile
-{
-  NSString *path = [[NSBundle mainBundle] pathForResource:@"languages" ofType:@"json"];
-  NSData *data = [NSData dataWithContentsOfFile:path];
-  return [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-}
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
   return 1;// or the number of vertical "columns" the picker will show...

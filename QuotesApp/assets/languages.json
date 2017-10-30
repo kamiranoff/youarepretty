@@ -34,6 +34,13 @@
   "rtl":false
   },
   {
+  "code": "nl",
+  "name": "Dutch",
+  "pretty": ["je bent mooi"],
+  "romanization":[],
+  "rtl":false
+  },
+  {
   "code": "en-US",
   "name": "American English",
   "pretty": ["you are pretty", "you are beautiful"],
@@ -96,6 +103,13 @@
   "rtl":false
   },
    {
+  "code": "he",
+  "name": "Hebrew",
+  "pretty": ["אֶת יָפָה"],
+  "romanization":["ett yafah"],
+  "rtl":true
+  },
+   {
   "code": "hu",
   "name": "Hungarian",
   "pretty": ["szép vagy"],
@@ -116,6 +130,20 @@
   "romanization": [],
   "rtl": false,
   },
+  {
+  "code": "ja",
+  "name": "Japanese",
+  "pretty": ["君は可愛いね。"],
+  "romanization":["Kimi wa kawaii ne"],
+  "rtl":false
+  },
+  {
+  "code": "ko",
+  "name": "Korean",
+  "pretty": ["너는 예쁘다"],
+  "romanization":["neoneun yeppeuda"],
+  "rtl":false
+  }, 
    {
   "code": "fa",
   "name": "Persian",
@@ -129,6 +157,27 @@
   "pretty": ["Jesteś piękna"],
   "romanization":[],
   "rtl": false,
+  },
+  {
+  "code": "pt",
+  "name": "Portuguese",
+  "pretty": ["você é bonita"],
+  "romanization":[],
+  "rtl":false
+  },
+   {
+  "code": "pt-BR",
+  "name": "Brazilian Portuguese",
+  "pretty": ["Você é linda"],
+  "romanization":[],
+  "rtl":false
+  },
+  {
+  "code": "pt-PT",
+  "name": "European Portuguese",
+  "pretty": ["Você é linda"],
+  "romanization":[],
+  "rtl":false
   },
   {
   "code": "ru",
@@ -171,6 +220,13 @@
   "pretty": [],
   "romanization":["tum baat suni hai"],
   "rtl":false
-  }
+  },
+  {
+  "code": "vi",
+  "name": "Vietnamese",
+  "pretty": ["em đẹp quá"],
+  "romanization":["Em dep qua"],
+  "rtl":false
+  }, 
   ]
 

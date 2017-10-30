@@ -452,7 +452,7 @@
   "code": "pt-BR",
   "name": "Brazilian Portuguese",
   "pretty": [],
-  "romanization":[],
+  "romanization":["Você é linda"],
   "rtl":false
   }, {
   "code": "br",
@@ -811,7 +811,7 @@
   }, {
   "code": "nl",
   "name": "Dutch",
-  "pretty": [],
+  "pretty": ["je bent mooi"],
   "romanization":[],
   "rtl":false
   }, {
@@ -895,7 +895,7 @@
   }, {
   "code": "pt-PT",
   "name": "European Portuguese",
-  "pretty": [],
+  "pretty": ["Você é linda"],
   "romanization":[],
   "rtl":false
   }, {
@@ -1177,9 +1177,9 @@
   }, {
   "code": "he",
   "name": "Hebrew",
-  "pretty": [],
-  "romanization":[],
-  "rtl":false
+  "pretty": ["אֶת יָפָה"],
+  "romanization":["ett yafah"],
+  "rtl":true
   }, {
   "code": "hz",
   "name": "Herero",
@@ -1333,8 +1333,8 @@
   }, {
   "code": "ja",
   "name": "Japanese",
-  "pretty": [],
-  "romanization":[],
+  "pretty": ["君は可愛いね。"],
+  "romanization":["Kimi wa kawaii ne"],
   "rtl":false
   }, {
   "code": "jv",
@@ -1591,8 +1591,8 @@
   }, {
   "code": "ko",
   "name": "Korean",
-  "pretty": [],
-  "romanization":[],
+  "pretty": ["너는 예쁘다"],
+  "romanization":["neoneun yeppeuda"],
   "rtl":false
   }, {
   "code": "kfo",
@@ -2605,7 +2605,7 @@
   }, {
   "code": "pt",
   "name": "Portuguese",
-  "pretty": [],
+  "pretty": ["você é bonita"],
   "romanization":[],
   "rtl":false
   }, {
@@ -3445,8 +3445,8 @@
   }, {
   "code": "vi",
   "name": "Vietnamese",
-  "pretty": [],
-  "romanization":[],
+  "pretty": ["em đẹp quá"],
+  "romanization":["Em dep qua"],
   "rtl":false
   }, {
   "code": "vo",
